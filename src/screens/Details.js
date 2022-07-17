@@ -1,8 +1,7 @@
-import React from 'react';
 import { Text, View, Image, StatusBar, FlatList, SafeAreaView } from 'react-native';
 //import { SafeAreaView } from 'react-native-safe-area-context'
 
-import { COLORS, SIZES, FONTS, assets } from '../constants'
+import { COLORS, SIZES, FONTS, SHADOWS, assets } from '../constants'
 import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DetailsDesc, DetailsBid } from '../components'
 
 
@@ -39,7 +38,7 @@ export default function Details({ route, navigation }) {
       <FocusedStatusBar 
         barStyle='dark-content'
         backgroundColor='transparent'
-        transLucent={true}
+        translucent={true}
       />
 
       <View style={{
@@ -52,7 +51,7 @@ export default function Details({ route, navigation }) {
         backgroundColor: 'rgba(255,255,255,0.5)',
         zIndex: 1
       }}>
-        <RectButton minWidth={170} fontSize={SIZES.large} {...COLORS.dark} />
+        <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
       </View>
       
       <FlatList 

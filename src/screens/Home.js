@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { View, FlatList } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { useState } from 'react';
+import { View, FlatList, SafeAreaView } from 'react-native';
+//import { SafeAreaView } from 'react-native-safe-area-context'
 
 import { COLORS, NFTData } from '../constants';
 import { HomeHeader, NFTCard, FocusedStatusBar } from '../components';
